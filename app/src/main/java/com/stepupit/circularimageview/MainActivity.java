@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.makeText(MainActivity.this,"unable to upload image"+ msggo,Toast.LENGTH_SHORT).show();
                                     }
                                     else {
-                                        Toast.makeText(MainActivity.this, status,Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(MainActivity.this, msggo,Toast.LENGTH_SHORT).show();
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                             public void onError(ANError anError) {
                                 progressDialog.dismiss();
                                     anError.printStackTrace();
-                                Toast.makeText(MainActivity.this,"error",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this,"Internet Error",Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
